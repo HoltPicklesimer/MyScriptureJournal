@@ -54,6 +54,7 @@ namespace MyScriptureJournal.Pages.JournalEntries
                 return Page();
             }
 
+            JournalEntry.EntryDate = DateTime.Now;
             _context.Attach(JournalEntry).State = EntityState.Modified;
 
             try

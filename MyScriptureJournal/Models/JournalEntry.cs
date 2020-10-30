@@ -14,12 +14,15 @@ namespace MyScriptureJournal.Models
         public DateTime EntryDate { get; set; }
 
         [Display(Name = "Book")]
+        [Required]
         public int BookId { get; set; }
 
         [StringLength(20, MinimumLength = 1)]
+        [Required]
         public string Chapter { get; set; }
 
         [StringLength(20, MinimumLength = 1)]
+        [Required]
         public string Verse { get; set; }
 
         [StringLength(300, MinimumLength = 3)]
